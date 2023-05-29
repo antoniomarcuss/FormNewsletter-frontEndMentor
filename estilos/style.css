@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular' ;
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto-Regular';
+   
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    
+}
+main{
+   max-width: 425px;
+   background-color: white;
+}
+
+.imgMobile img{
+    width: 100%;
+}
+
+article h1{
+    font-family: 'Roboto-Bold';
+    font-size: 35px;
+    margin: 20px;
+    color: #222741;
+}
+
+article p {
+    margin: 20px;
+}
+
+ul li {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    height: 25px;
+    margin: 20px;
+}
+
+ul li span {
+    margin-left: 10px;
+    
+}
+
+.erroEmail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.erro{
+    display: none;
+    margin-right: 20px;
+    color: #FF784F;
+}
+
+.error::placeholder {
+    color: red;
+  }
+
+form p {
+    font-family: 'Roboto-Bold';
+    color: #222741;
+    font-size: 12px;
+    margin: 30px 0px 0px 15px;
+}
+
+
+
+.inputForm {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    width: 90%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    outline: 0;
+}
+
+button{
+    background-color: #222741;
+    color: white;
+    border: none;
+}
+
+footer  {
+    display: none;
+}
+
+.imgMobile2{
+    display: none;
+}
+
+/* classList */
+.orange-placeholder::placeholder {
+    color:#FF784F;
+  }
+
+@media screen and (min-width: 762px) and (max-width: 1440px) {
+
+    body{
+        background-color: #373d5c;
+    }
+
+    .imgMobile{
+        display: none;
+    }
+
+    .imgMobile2 {
+        display: block;
+        flex-grow: 1;
+        height: 100%;
+      }
+
+      .imgMobile2 img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+    .divisor {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+        height: 550px;
+      }
+
+    article h1{
+        font-size: 3em;
+    }
+
+    main{
+        margin: 20px;
+        max-width: 400px;
+    }
+
+    ul li{
+        height: 20px;
+    }
+
+    button:hover{
+        background-image: linear-gradient(to left,#FF784F, #FC517A  );
+        border: none;
+    
+    }
+
+}
+
+
+    
+    
+
+
+
