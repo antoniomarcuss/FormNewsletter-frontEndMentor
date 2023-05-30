@@ -1,6 +1,7 @@
 let form = document.querySelector('form')
 let email = document.getElementById('email')
 let erro = document.querySelector('.erro')
+let img = document.querySelector('.divisor .imgMobile2')
 form.addEventListener('submit', enviarForm)
 email.addEventListener('focus', clickEmail)
 function enviarForm(e){
@@ -20,8 +21,7 @@ function clickEmail(){
     email.style.backgroundColor = ''
     email.classList.remove('orange-placeholder')
     email.style.border = ''
-    
-
+ 
 }
 
 
