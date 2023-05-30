@@ -14,7 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body{
@@ -27,21 +27,34 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96vh;
-    
+    /* min-height: 100vh; */
 }
 main{
-   max-width: 425px;
+   max-width: 375px;
    background-color: white;
+   color: #222741;
+  
 }
 
 .imgMobile img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+.imgMobile{
+    height: 200px;
+    width: 100%;
+    background-position: end;
+    
+
 }
 
 article h1{
     font-family: 'Roboto-Bold';
-    font-size: 35px;
+    font-size: 40px;
     margin: 20px;
     color: #222741;
 }
@@ -54,14 +67,15 @@ ul li {
     display: flex;
     align-items: flex-start;
     list-style-type: none;
-    height: 25px;
-    margin: 20px;
+    height: 50px;
+    margin-left: 20px;
 }
 
 ul li span {
     margin-left: 10px;
     
 }
+
 
 .erroEmail{
     display: flex;
@@ -81,11 +95,9 @@ ul li span {
 form p {
     font-family: 'Roboto-Bold';
     color: #222741;
+    margin-left: 20px;
     font-size: 12px;
-    margin: 30px 0px 0px 15px;
 }
-
-
 
 .inputForm {
     display: flex;
@@ -96,7 +108,7 @@ form p {
 
 input, button {
     width: 90%;
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
     border-radius: 7px;
     border: 1px solid gray;
@@ -128,6 +140,10 @@ footer  {
         background-color: #373d5c;
     }
 
+    #container{
+        min-height: 100vh;
+    }
+
     .imgMobile{
         display: none;
     }
@@ -150,20 +166,41 @@ footer  {
         padding: 20px;
         border-radius: 30px;
         margin: 10px;
-        height: 550px;
+        height: 380px;
       }
 
     article h1{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     main{
-        margin: 20px;
-        max-width: 400px;
+        width: 100%;
+        min-height: 100%;
+        border: 1px solid black;
+        padding: ;
     }
 
     ul li{
-        height: 20px;
+        height: 25px;
+    }
+
+    ul li img{
+        width: 15px;
+    }
+
+    input, button {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .inputForm {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    form p {
+        font-size: 9px;
+        padding-top: 15px;
     }
 
     button:hover{

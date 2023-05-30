@@ -3,8 +3,7 @@ let email = document.getElementById('email')
 let erro = document.querySelector('.erro')
 form.addEventListener('submit', enviarForm)
 email.addEventListener('focus', clickEmail)
-function enviarForm(e){
-    e.preventDefault()
+function enviarForm(){
     if(!email.value){
         erro.style.display = 'block'
         email.style.backgroundColor = '#f3d4ca'
