@@ -81,15 +81,12 @@ ul li span {
     align-items: center;
     justify-content: space-between;
 }
+
 .erro{
     display: none;
     margin-right: 20px;
     color: #FF784F;
 }
-
-.error::placeholder {
-    color: red;
-  }
 
 form p {
     font-family: 'Roboto-Bold';
@@ -133,6 +130,10 @@ footer  {
 .orange-placeholder::placeholder {
     color:#FF784F;
   }
+
+.borderInput {
+    border: 1px solid #FF784F;
+}
 
 @media screen and (min-width: 762px) and (max-width: 992px) {
 
